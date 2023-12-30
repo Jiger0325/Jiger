@@ -147,6 +147,7 @@ border: 1px solid #000;
       .image {
         width: 300px; /* Set the width to 100% to maintain responsiveness */
         height: 200px; /* Automatically adjust the height to maintain aspect ratio */
+        padding: 5px;
       }
       .text {
           position: absolute; 
