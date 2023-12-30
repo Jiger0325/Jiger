@@ -1,4 +1,8 @@
-
+body 
+{
+  font-family: Arial;
+  margin: 0;
+}
 
 .custom-font {
   font-family:  Freestyle Script;
