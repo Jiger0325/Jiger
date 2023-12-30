@@ -83,5 +83,9 @@ function showMoreImages() {
 }
 
 
+// Registers a pagehide listener
+window.addEventListener('pagehide', function () {
+  // Your pagehide event logic goes here
+});
 
 
