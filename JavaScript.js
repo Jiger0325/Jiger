@@ -83,3 +83,12 @@ function showMoreImages() {
 }
 
 
+
+
+// Registers a pagehide listener
+window.addEventListener('pagehide', function () {
+  // Your pagehide event logic goes here
+  // For example, you might want to clear intervals or perform cleanup
+  clearInterval(intervalId); // Clear the interval set for changing pictures automatically
+});
+
