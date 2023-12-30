@@ -2,8 +2,10 @@
 
 body 
 {
+
   font-family: Arial;
   margin: 0;
+  overflow-x: hidden; 
 }
 
 .custom-font {
@@ -11,10 +13,13 @@ body
     font-size: 40px;
 }
 
+/* Adjusted Styles for Turan Tour Logo */
+
 .logo {
   width: 150px; /* Set the desired width */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
+
 
 .navbar 
 {
@@ -197,8 +202,8 @@ border: 1px solid #000;
 {
   display: inline-block;
   margin: 50px;
-  height: 200px;
-  width: 200px;          
+  height: 190px;
+  width: 190px;          
 }
 
 .Footer
