@@ -5,23 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Website">
 <title>Contact Us</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-    <link rel="stylesheet" href="mystyle.css" defer>
-
-    
+  <!-- Inline critical CSS -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+</style>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Preconnect hint for a third-party domain -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Dns-prefetch hint for a third-party domain -->
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  
+  
+  
+ 
 </head>
 
 
 
 <body>
   <nav class="navbar">
-    <img src="img/Logo.png" class="logo" alt="Turan Tour Logo">
+    <img src="img/Logo.webp" style="width: 150px; height: 100px;" alt="Turan Tour Logo">
     <a href="Turan%20Tour.html">Home</a>
     <a href="Travel_Destinations.html">Travel Destinations</a>
     <a href="Tours.html">Tours</a>
@@ -36,14 +45,15 @@
     </div>
   </nav>
   
-<div class="picture-container">
-  <div class="picture-slideshow">
-    <a class="picture-nav prev" href="#previous-image">&#9664;</a>
-    <img src="img/Tavan%20Bogd.jpeg" class="picture"  alt="YourImage">
-    <a class="picture-nav next" href="#next-image">&#9654;</a>
+  <div class="picture-container">
+    <div class="picture-slideshow">
+      <a class="picture-nav prev" href="#previous-image">&#9664;</a>
+      <img src="img/Tavan%20Bogd.webp" class="picture"  alt="YourImage">
+      <a class="picture-nav next" href="#next-image">&#9654;</a>
+    </div>
+    <div class="picture-text">Altai Trek</div>
   </div>
-  <div class="picture-text">Altai Trek</div>
-</div>
+  
 
 
 <!--Contact Us-->
@@ -60,7 +70,7 @@
 
 
 <div style = "display:flex; justify-content:center">
-<img src = "img/Operator.png" style = "height:200px; width:200px;" alt="Your Image">
+<img src = "img/Operator.webp" style = "height:200px; width:200px;" alt="Your Image">
 <div>
    <div style = "display:flex">
   
@@ -98,7 +108,7 @@
 <!--Footer Section-->
 <div class = "Footer">
   <div style = "margin-right:100px">
-  <img src="img/Logo.png" class="logo" alt="Turan Tour Logo">
+    <img src="img/Logo.webp" class="logo" alt="Turan Tour Logo">
   <p style = "color:white">Copyright 2023 Turan Tour LLC</p>
   </div>
 
@@ -118,12 +128,13 @@
     <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
     <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
     <a href="#" class="fa fa-youtube" aria-label="YouTube"></a>
+
   </div>
 </div>
 
 
 
 
-<script src="JavaScript.js"></script> 
+<script src="JavaScript.js" defer></script> 
 </body>
 </html>

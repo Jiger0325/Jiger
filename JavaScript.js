@@ -1,4 +1,4 @@
-const pictures = ["img/Tavan Bogd.jpeg", "img/Golden Eagle.jpg", "img/Horse Riding.jpg", "img/Kazakh Nomads.jpg", "img/Winter Migration.jpg", "img/Jeep Tour.jpg", "img/Mountain Climbing.jpg", "img/Fly Fishing.jpeg"];
+const pictures = ["img/Tavan Bogd.webp", "img/Golden Eagle.webp", "img/Horse Riding.webp", "img/Kazakh Nomads.webp", "img/Winter Migration.webp", "img/Jeep Tour.webp", "img/Mountain Climbing.webp", "img/Fly Fishing.webp"];
 const pictureTexts = ["Altai Trek", "Golden Eagle Tour", "Horse Riding", "Kazakh Nomads", "Nomad's Winter Migration", "Altai 4x4 Tour", "Mountain Climbing", "Fly Fishing"];
 
 

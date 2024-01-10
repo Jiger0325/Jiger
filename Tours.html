@@ -4,18 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Website">
-<title>Tours</title>#
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Tours</title>
+
+  <!-- Inline critical CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+    }
+  </style>
+
     <link rel="stylesheet" href="mystyle.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Preconnect hint for a third-party domain -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Dns-prefetch hint for a third-party domain -->
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   
+  
+    <!-- Critical JavaScript inlined -->
+    <script>
+      // Your critical JavaScript code here
+      document.addEventListener('DOMContentLoaded', function() {
+        // Your critical JavaScript logic
+      });
+    </script>
+ 
 </head>
 
 
@@ -23,7 +39,7 @@
 
 <body>
   <nav class="navbar">
-    <img src="img/Logo.png" class="logo" alt="Turan Tour Logo">
+    <img src="img/Logo.webp" style="width: 150px; height: 100px;" alt="Turan Tour Logo">
     <a href="Turan%20Tour.html">Home</a>
     <a href="Travel_Destinations.html">Travel Destinations</a>
     <a href="Tours.html">Tours</a>
@@ -38,14 +54,16 @@
     </div>
   </nav>
   
-<div class="picture-container">
-  <div class="picture-slideshow">
-    <a class="picture-nav prev" href="#previous-image">&#9664;</a>
-    <img src="img/Tavan%20Bogd.jpeg" class="picture"  alt="YourImage">
-    <a class="picture-nav next" href="#next-image">&#9654;</a>
+  <div class="picture-container">
+    <div class="picture-slideshow">
+      <a class="picture-nav prev" href="#previous-image">&#9664;</a>
+      <img src="img/Tavan%20Bogd.webp" class="picture"  alt="YourImage">
+      <a class="picture-nav next" href="#next-image">&#9654;</a>
+    </div>
+    <div class="picture-text">Altai Trek</div>
   </div>
-  <div class="picture-text">Altai Trek</div>
-</div>
+  
+
 
 
 
@@ -75,7 +93,7 @@
 <div style = "display:flex">
 <!--Altai Tavan Bogd-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Tavan%20Bogd.jpeg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Tavan%20Bogd.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Altai Trek</p>
     <p class = Select_Your_Desired_Adventure_Text>Join as an individual and make new friends, or come as part of small group.</p>
     <p style = "color:white">Travel Time</p>
@@ -89,7 +107,7 @@
 
 <!--Kazakh Nomads-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Kazakh%20Nomads.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Kazakh%20Nomads.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Kazakh Nomads</p>
     <p class = Select_Your_Desired_Adventure_Text>To discover a different world, Bayan Olgii is the only Kazakh province in the Mongolia.</p>
     <p style = "color:white">Travel Time</p>
@@ -103,7 +121,7 @@
 
 <!--Golden Eagle Festival-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Golden%20Eagle.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Golden%20Eagle.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Golden Eagle Festival</p>
     <p class = Select_Your_Desired_Adventure_Text>The Golden Eagle Festival has been the largest gathering of eagle hunters.</p>
     <p style = "color:white">Travel Time</p>
@@ -117,7 +135,7 @@
 
 <!--Horse Riding-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Horse%20Riding.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Horse%20Riding.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Horse Riding</p>
     <p class = Select_Your_Desired_Adventure_Text>Experience a riding tour surrounded by the spectacular of the Altai Mountains.</p>
     <p style = "color:white">Travel Time</p>
@@ -134,7 +152,7 @@
 <div style = "display:flex">
 <!--Mountain Climbing-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Mountain%20Climbing.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Mountain%20Climbing.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Mountain Climbing</p>
     <p class = Select_Your_Desired_Adventure_Text>For serious mountain bikers: wide open landscapes, breathtaking vistas!</p>
     <p style = "color:white">Travel Time</p>
@@ -148,7 +166,7 @@
 
 <!--Fly Fishing-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Fly%20Fishing.jpeg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Fly%20Fishing.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Fly Fishing</p>
     <p class = Select_Your_Desired_Adventure_Text>Pristine, clear lakes, stunning surroundings, and some very large fish!</p>
     <p style = "color:white">Travel Time</p>
@@ -162,7 +180,7 @@
 
 <!--Jeep Tour-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Jeep%20Tour.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Jeep%20Tour.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px">Jeep Tour</p>
     <p class = Select_Your_Desired_Adventure_Text>Explore the wild western mongolia with offroad car and make the everlasting memory.</p>
     <p style = "color:white">Travel Time</p>
@@ -176,7 +194,7 @@
 
 <!-- Nomad’s Winter Migration-->
 <div class="Select_Your_Desired_Adventure_Types">
-    <img src = "img/Winter%20Migration.jpg" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
+    <img src = "img/Winter%20Migration.webp" class = "Select_Your_Desired_Adventure_Image" alt="Your Image">
     <p class = Select_Your_Desired_Adventure_Text style = "font-size:20px"> Nomad’s Winter Migration</p>
     <p class = Select_Your_Desired_Adventure_Text>You will live with Kazakh family for several days, seeing the real everyday life of a nomads.</p>
     <p style = "color:white">Travel Time</p>
@@ -203,7 +221,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Tavan%20Bogd.jpeg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Tavan%20Bogd.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -238,7 +256,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Golden%20Eagle.jpg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Golden%20Eagle.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -272,7 +290,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Kazakh%20Nomads.jpg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Kazakh%20Nomads.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -307,7 +325,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Horse%20Riding.jpg" alt="Your image">
+    <img class = "Tour_Image" src="img/Horse%20Riding.webp" alt="Your image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -343,7 +361,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Mountain%20Climbing.jpg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Mountain%20Climbing.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -377,7 +395,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Fly%20Fishing.jpeg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Fly%20Fishing.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -411,7 +429,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Jeep%20Tour.jpg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Jeep%20Tour.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -446,7 +464,7 @@
 
 <div>
   <div class = "Tour_Types" style="display:flex">
-    <img class = "Tour_Image" src="img/Winter%20Migration.jpg" alt="Your Image">
+    <img class = "Tour_Image" src="img/Winter%20Migration.webp" alt="Your Image">
     <div style = "margin-left: 20px">
           <div style="display:flex; align-items:center">
           <i class="material-icons" style = "margin-left: 20px">date_range</i>
@@ -477,10 +495,11 @@
 
 
 
+
 <!--Footer Section-->
 <div class = "Footer">
   <div style = "margin-right:100px">
-  <img src="img/Logo.png" class="logo" alt="Turan Tour Logo">
+    <img src="img/Logo.webp" class="logo" alt="Turan Tour Logo">
   <p style = "color:white">Copyright 2023 Turan Tour LLC</p>
   </div>
 
@@ -500,8 +519,10 @@
     <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
     <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
     <a href="#" class="fa fa-youtube" aria-label="YouTube"></a>
+
   </div>
 </div>
+
 
 
 
