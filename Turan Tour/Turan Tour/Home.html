@@ -1,0 +1,365 @@
+<!Doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta name="description" content="Home page">
+        <title>Home Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body
+                {
+                    display: var(--flexDisplay);
+                    justify-content: var(--center);
+                    align-items: var(--center);
+                    min-height: var(--vh100);
+                }
+        </style>
+    </head>
+
+    
+
+    <body>
+
+        <div id = "loader" class = "loader">
+            <span style = "--i:1;"></span>
+            <span style = "--i:2;"></span>
+            <span style = "--i:3;"></span>
+            <span style = "--i:4;"></span>
+            <span style = "--i:5;"></span>
+            <span style = "--i:6;"></span>
+            <span style = "--i:7;"></span>
+            <span style = "--i:8;"></span>
+            <span style = "--i:9;"></span>
+            <span style = "--i:10;"></span>
+            <span style = "--i:11;"></span>
+            <span style = "--i:12;"></span>
+            <span style = "--i:13;"></span>
+            <span style = "--i:14;"></span>
+            <span style = "--i:15;"></span>
+            <span style = "--i:16;"></span>
+            <span style = "--i:17;"></span>
+            <span style = "--i:18;"></span>
+            <span style = "--i:19;"></span>
+            <span style = "--i:20;"></span>
+            <div class = "rocket"></div>
+        </div>
+
+        <div class = "hidden-homepage" id= "home-page" >
+            <nav>
+                <div class = "slideshow-container">
+                    <article class = slides>
+                        <img  class = "bg-image" src = "Images/Syrgaly.jpg" alt = "Syrgaly HorseBack Riding Tour">
+                        <h2 class = "bg-header">Syrgaly HorseBack Riding Tour</h2>
+                        <a href="HorsebackRiding.html" class = "bg-button">View More</a>
+                    </article>
+                    <article class = slides>
+                        <img class = "bg-image" src = "Images/Hiking.webp" alt = "Altai Tavan Bogd Hiking Tour">
+                        <h2 class = "bg-header">Altai Tavan Bogd Hiking Tour</h2>
+                        <a href="HikingTour.html" class = "bg-button">View More</a>
+                    </article>
+                    <article class = slides>
+                        <img class = "bg-image" src = "Images/Eagle_Festival.webp" alt = "Golden Eagle Festival Tour">
+                        <h2 class = "bg-header">Golden Eagle Festival Tour</h2>
+                        <a href="EagleFestival.html" class = "bg-button">View More</a>
+                    </article>
+                    <article class = slides>
+                        <img class = "bg-image" src = "Images/Kazakh-Nomadic-Family.jpg" alt = "Staying With Kazakh Nomad Family Tour">
+                        <h2 class = "bg-header">Staying With Kazakh Nomad Family Tour</h2>
+                        <a href="KazakhNomads.html" class = "bg-button">View More</a>
+                    </article>
+                    <article class = slides>
+                        <img class = "bg-image" src = "Images/Winter-Migration.webp" alt = "Nomad's Winter Migration Tour">
+                        <h2 class = "bg-header">Nomad's Winter Migration Tour</h2>
+                        <a href="WinterMigration.html" class = "bg-button">View More</a>
+                    </article>
+                    <article class = slides>
+                        <img class = "bg-image" src = "Images/Jeep_Tour.webp" alt = "Week-long Altai Jeep Tour">
+                        <h2 class = "bg-header">Week-long Altai Jeep Tour</h2>
+                        <a href="JeepTour.html" class = "bg-button">View More</a>
+                    </article>
+                </div>
+
+                <div>
+                    <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                    <div class = "search">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search" name="search" class = "searchbar">
+                            <i class="fa fa-search search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="menu-bar" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> 
+                    <ul class = "links"  id="menuLinks">
+                        <li class = "main-link"><a href = "Tours.html">Tours</a>
+                            <ul class = "sub-links">
+                                <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                                <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                                <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                                <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                                <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                                <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>                                    
+                            </ul>
+                        </li>  
+                        <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                        <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                        <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                        <li><a href = "Contact.html">Contact</a></li>
+                        <li><a href = "Tailormade.html">Tailormade</a></li>
+                    </ul>
+                </div> 
+            </nav>
+        
+
+            <div class="radio-group">
+                <label class="center">
+                    <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+                </label>
+                <label class="center">
+                    <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+                </label>
+            </div>
+                
+            <section class = "introduction">
+                    <h2 class = "header">Turan Tour</h2>
+                    <h2 class = "subheader">Authentic Experiences</h2>
+                    <p class = "intro-paragraph">Turan Tour was founded in 2025 by a young couple based in Western Mongolia. We aim to develop our region, create new jobs for locals, and increase their household earnings. Our company organizes: mountain-climbing expeditions, hiking trips, horse treks, meetings with eagle hunters, visits to nomadic families, cultural tours, fishing trips, bird-watching, mountain-biking, and the Golden Eagle Festival tours. We have successfully raised funds from domestic and foreign supporters for projects and initiatives to improve the living standards of our local communities. We also contribute a certain percentage of our annual income to local projects and events. In 2018, Altai Expeditions LLC was selected as the “Best Tour Operator of the Year” by the Tourism Association of Bayan-Ulgii province.<br><br></p>
+                    <a href="AboutUs.html" class="intro-button more-about-us flex-row gap10px">More About Us<i class='fa fa-arrow-right arrowRight'></i></a>
+                    <img class = "pattern-image-topleft" src = "Images/Pattern.png" alt = "Pattern">
+                    <img class = "pattern-image-topright" src = "Images/Pattern.png" alt = "Pattern">
+                    <img class = "pattern-image-bottomleft" src = "Images/Pattern.png" alt = "Pattern">
+                    <img class = "pattern-image-bottomright" src = "Images/Pattern.png" alt = "Pattern">
+            </section>
+
+            <section class = "best-selling-tours">
+                <h2 class = "header">The Best Selling Tours</h2>
+                <h2 class = "subheader">Your Journey Starts Here</h2>
+                <br>
+                <div class = "tours">
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Eagle_Festival.webp" alt = "Golden Eagle Festival Tour">
+                        <h2 class = "tour-header">Golden Eagle Festival Tour</h2>
+                        <p class = "tour-paragraph">The Golden Eagle Festival in Mongolia has been the largest gathering of eagle hunters and their eagles in the world since it started in 1999. It is recognized as a UNESCO World Heritage Cultural Event.</p>
+                        <p class = "tour-price">From <span class = "dollar">1190$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                                <i class="fa fa-clock-o"></i>
+                                <p class = "tour-duration">4 days</p>
+                            <a href="EagleFestival.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Hiking.webp" alt = "Altai Tavan Bogd Tour Hiking Tour">
+                        <h2 class = "tour-header">Altai Tavan Bogd Hiking Tour</h2>
+                        <p class = "tour-paragraph">The beauty of the Altai Mountains, the highest peaks of Mongolia located in the country’s far west, and its rugged terrain scattered with various vegetation and wildlife are best enjoyed on foot.</p>
+                        <p class = "tour-price">From <span class = "dollar">1630$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">14 days</p>
+                            <a href="HikingTour.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Horseback_Riding.webp" alt = "Syrgaly Tour Horseback Riding Tour">
+                        <h2 class = "tour-header">Syrgaly Horseback Riding Tour</h2>
+                        <p class = "tour-paragraph">Experience a horse-riding expedition surrounded by dramatic scenery in the remote, far west of Mongolia. Behold the remarkable beauty of the Altai Mountains, the country’s tallest five peaks, located at the Altai Tavan Bogd National Park. </p>
+                        <p class = "tour-price">From <span class = "dollar">1970$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">14 days</p>
+                            <a href="HorsebackRiding.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Kazakh-Nomadic-Family.jpg" alt = "Staying With A Kazakh Nomad Family Tour">
+                        <h2 class = "tour-header">Staying With a Kazakh Nomad Family Tour</h2>
+                        <p class = "tour-paragraph">Embark on an experience of a lifetime to a different world - to the remote, far west of Mongolia. Bayan-Ulgii is the country’s westernmost province neighboring both Russia and China.</p>
+                        <p class = "tour-price">From <span class = "dollar">850$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">6 days</p>
+                            <a href="KazakhNomads.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Winter-Migration.webp" alt = "Nomad's Winter Migration Tour">
+                        <h2 class = "tour-header">Nomad's Winter Migration Tour</h2>
+                        <p class = "tour-paragraph">This is your chance to join Mongolia’s nomadic herders as they embark on their seasonal migration from their winter quarter to their spring quarter.</p>
+                        <p class = "tour-price">From <span class = "dollar">2040$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">11 days</p>
+                            <a href="WinterMigration.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Jeep_Tour.webp" alt = "Jeep Tour">
+                        <h2 class = "tour-header">Week-long Altai Jeep Tour</h2>
+                        <p class = "tour-paragraph">If you are looking for a unique week-long getaway to a remote and beautiful part of Mongolia, the country’s western frontier offers that and more. Not only will you be immersed in pristine nature, you will also have the chance to meet authentic local nomads.</p>
+                        <p class = "tour-price">From <span class = "dollar">800$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">6 days</p>
+                            <a href="JeepTour.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Eagle_Festival.webp" alt = "Golden Eagle Festival Tour">
+                        <h2 class = "tour-header">Golden Eagle Festival Tour</h2>
+                        <p class = "tour-paragraph">The Golden Eagle Festival in Mongolia has been the largest gathering of eagle hunters and their eagles in the world since it started in 1999. It is recognized as a UNESCO World Heritage Cultural Event.</p>
+                        <p class = "tour-price">From <span class = "dollar">1190$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                                <i class="fa fa-clock-o"></i>
+                                <p class = "tour-duration">4 days</p>
+                            <a href="EagleFestival.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+                    <article class = "tour">
+                        <img class = "tour-image" src = "Images/Hiking.webp" alt = "Altai Tavan Bogd Tour Hiking Tour">
+                        <h2 class = "tour-header">Altai Tavan Bogd Hiking Tour</h2>
+                        <p class = "tour-paragraph">The beauty of the Altai Mountains, the highest peaks of Mongolia located in the country’s far west, and its rugged terrain scattered with various vegetation and wildlife are best enjoyed on foot.</p>
+                        <p class = "tour-price">From <span class = "dollar">1630$</span>/ per person</p>
+                        <hr class = "hr-black">
+                        <div class = "duration-clock-viewMoreButton">
+                            <i class="fa fa-clock-o"></i>
+                            <p class = "tour-duration">14 days</p>
+                            <a href="HikingTour.html" class = "view-more-button">View More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class = "dots">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+                <div>
+                    <a href="Tours.html" class = "view-more-button-larger">View All Tours</a>
+                </div>
+                
+            </section>
+
+            <section class = "travelogue">
+                <h2 class = "header">Nomad's & Altai peak's Travelogue</h2>
+                <div class = "travelogue-images">
+                    <img class = "image-travelogue" src = "Images/Eagle_Festival.webp" alt = "Eagle Festival">
+                    <img class = "image-travelogue" src = "Images/Nauryz-festival.webp" alt = "Nauryz Festival">
+                    <img class = "image-travelogue" src = "Images/KazakhNomads.jpg" alt = "Kazakh Nomads">
+                    <img class = "image-travelogue" src = "Images/Tavan-bogd.webp" alt = "Altai Tavan Bogd National PArk">
+                    <img class = "image-travelogue" src = "Images/Syrgaly2.jpg" alt = "Syrgaly2">
+                    <img class = "image-travelogue" src = "Images/Waterfall.jpg" alt = "Waterfall">
+                    <img class = "image-travelogue" src = "Images/Shiveet-Hairhan.jpg" alt = "Shiveet Hairhan">
+                    <img class = "image-travelogue" src = "Images/Petroglyph.jpg" alt = "Petroglyph">
+                </div>
+                <div class="travelogue-images travelogue-hidden-images ">
+                    <img class="image-travelogue" src="Images/Western-Mongolia.jpg" alt="Western Mongolia">
+                    <img class="image-travelogue" src="Images/Olgii.jpg" alt="Olgii city">
+                    <img class="image-travelogue" src="Images/Camping.jpg" alt="Camping">
+                    <img class="image-travelogue" src="Images/Gobi-desert.jpg" alt="Gobi Desert">
+                </div>
+                <div class = "text-center">
+                    <button  class = "view-more-button" id="viewMoreButton">View More</button>
+                </div>
+            </section>
+
+            <section class = "partners">
+                <br>
+                <h2 class = "header">Our Partners</h2>
+                <br>
+                <div class = "partner-images">
+                    <button class = "left-arrow"><i class="material-icons">keyboard_arrow_left</i></button>
+                    <img class = "partner-image" src = "Images/Aero_Mongolia_logo.webp" alt = "Aero Mongolia">
+                    <img class = "partner-image" src = "Images/HunnuAirLogo.webp" alt = "Hunnu Air">
+                    <img class = "partner-image" src = "Images/Ministry-Of-Tourism-In-Olgii.webp" alt = "Ministry Of Tourism In Olgii">
+                    <img class = "partner-image" src = "Images/Mongolian-Ministry-Of-Tourism.webp" alt = "Mongolian Ministry Of Tourism">
+                    <img class = "partner-image" src = "Images/Nomads-tours-and-expeditions.webp" alt = "Nomads Tours And Expeditions">
+                    <img class = "partner-image" src = "Images/Ayan-travel.webp" alt = "Ayan Travel">
+                    <img class = "partner-image" src = "Images/Juulchin_world_tours.webp" alt = "Juulchin World Tours">
+                    <img class = "partner-image" src = "Images/Juulchin_tourism_corporation.webp" alt = "Juulchin Tourism Corporation">
+                    <img class = "partner-image" src = "Images/Aero_Mongolia_logo.webp" alt = "Aero Mongolia">
+                    <img class = "partner-image" src = "Images/HunnuAirLogo.webp" alt = "Hunnu Air">
+                    <img class = "partner-image" src = "Images/Ministry-Of-Tourism-In-Olgii.webp" alt = "Ministry Of Tourism In Olgii">
+                    <button class = "right-arrow"><i class="material-icons">keyboard_arrow_right</i></button>
+                </div>
+            </section>  
+            <br>
+                    
+            <footer class = "footer">
+                <div class = "footer-columns">
+                    <div class = "footer-column">
+                        <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                        <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                    </div>
+                    <section class = "footer-column">
+                        <h2>Contact Us</h2>
+                        <div class = "footer-icons">
+                            <div class = "e-mail">
+                                <i class="fa fa-envelope"></i>
+                                <p>Jiger0325@gmail.com</p>
+                            </div>
+                            <div class = "phone">
+                                <i class="fa fa-mobile-phone"></i>
+                                <p>+976 94 04 03 25</p>
+                            </div>
+                            <div class = "whatsapp">
+                                <i class="fa fa-whatsapp"></i>
+                                <p>+976 94 04 03 25</p>
+                            </div>
+                            <div class = "address">
+                                <i class="fa fa-location-arrow"></i>
+                                <p>Address</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class = "footer-column">
+                        <h2>Follow Us On</h2>
+                        <div class = "follow-us">
+                            <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                        </div>
+                    </section>                
+                </div>
+                <hr class = "hr">
+                <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+            </footer>
+        </div>
+        <script src="JS.js"></script>
+        <script>
+            //Rotating Airplane
+            document.addEventListener('DOMContentLoaded', function () 
+            {
+            // Wait for the DOM to be fully loaded before executing this script
+
+            // Function to show the home page and hide the loader
+            function showHomePage() {
+                document.getElementById('home-page').style.display = 'block';
+                document.getElementById('loader').style.display = 'none';  
+            }
+            // Set a timeout to show the home page after 2 seconds
+            setTimeout(showHomePage, 2000);
+            });
+        </script>
+    </body>    
+</html>
+
+

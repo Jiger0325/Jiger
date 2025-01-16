@@ -1,0 +1,309 @@
+<!Doctype html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta name="description" content="Eagle Festival Tour Page">
+        <title>Golden Eagle Festival Tour</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+   
+    <body>
+        <nav> 
+            <section>
+                <img class = "smaller-bg-image" src = "Images/Eagle_Festival.webp" alt = "Golden Eagle Festival Tour">
+                <h2 class = "smaller-bg-header">Golden Eagle Festival Tour</h2>
+                <p class = "smaller-bg-subheader">Golden Eagle Festival is recognized as a UNESCO World Heritage Cultural Event</p>
+                <div class = "smaller-bg-image-info">
+                    <div class = "flex-col center">
+                        <i class="fa fa-clock-o"></i>
+                        <p class = "tour-duration bold-font-16px">Duration</p>
+                        <p class = "tour-duration bold-font-16px">4 days</p>
+                    </div>
+                    <div class = "flex-col center">
+                        <i class="material-icons">graphic_eq</i>
+                        <p class = "tour-duration bold-font-16px">Physical Rating</p>
+                        <p class = "tour-duration bold-font-16px">Easy</p>
+                    </div>
+                    <div class = "flex-col center">
+                        <i class="fa fa-group"></i>
+                        <p class = "tour-duration bold-font-16px">Group Size</p>
+                        <p class = "tour-duration bold-font-16px">2-12 PAX</p>
+                    </div>
+                    <div class = "flex-col center">
+                        <i class="material-icons">graphic_eq</i>
+                        <p class = "tour-duration bold-font-16px">Cultural Rating</p>
+                        <p class = "tour-duration bold-font-16px">High</p>
+                    </div>
+                </div>
+                <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                <div class = "search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search" class = "searchbar">
+                        <i class="fa fa-search search-icon"></i>
+                    </form>
+                </div>
+                <div class="menu-bar" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> 
+                <ul class = "links"  id="menuLinks">
+                    <li class = "main-link"><a href = "Tours.html">Tours</a>
+                        <ul class = "sub-links">
+                            <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                            <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                            <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                            <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                            <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                            <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                        </ul>
+                    </li>  
+                    <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                    <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                    <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href = "Contact.html">Contact</a></li>
+                    <li><a href = "Tailormade.html">Tailormade</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <div class="radio-group">
+            <label class="center">
+                <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+            </label>
+            <label class="center">
+                <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+            </label>
+        </div>
+          
+        
+        <section class = "tour-buttons">
+            <h1 class = "tour-top-buttons" id = "overview" onclick="OverviewSection()">Overview</h1>
+            <h1 class = "tour-top-buttons" id = "tour-gallery" onclick="TourGallerySection()">Tour Gallery</h1>
+            <h1 class = "tour-top-buttons" id = "price-include-exclude" onclick="PriceIncludeExcludeSection()">Price include/exclude</h1>
+            <h1 class = "tour-top-buttons" id = "itinerary" onclick="ItinerarySection()">Itinerary</h1>
+        </section>
+        <hr class = "hr-black-98vw">
+
+        <div class = "tour-content">
+            <div class = "left-column">
+                <article class = "overview" id = "overview-section">
+                    <h2>Overview</h2>
+                    <p>The Golden Eagle Festival in Mongolia has been the largest gathering of eagle hunters and their eagles in the world since it started in 1999. It is recognized as a UNESCO World Heritage Cultural Event. This two-day festival takes place in the country’s remote, far west - home to the nation’s largest ethnic minority group. The Kazakhs have preserved their age-old nomadic culture, including their heritage of training and hunting with eagles - the largest and most powerful of raptors. The festival commences with a parade of mounted hunters dressed in traditional attires with their majestic golden eagles on their arms, followed by a series of games. The events are: eagle catching fox skin dragged behind a horse, eagle returning to their owner’s arm from a distance on command, and Kazakh games of tiyn teru - coin grab from the ground while riding on horseback, kyz kuar - woman whips the man while both are galloping on horseback, and kukbar - tug of war over a goatskin while on horseback. You’ll also get a chance to hear vibrant, traditional Kazakh music and taste hearty local dishes.
+                        <br><br>The Eagle Festival is a large-scale event that takes place once a year, so it is in high demand. We recommend our customers to make a reservation as early as possible. The reason is that the prices of domestic flights and hotel reservations increase rapidly as the Eagle Festival approaches, which increases the cost for our customers.
+                    </p>
+                </article>
+                <section id = "tour-gallery-section">
+                    <h2>Tour Gallery</h2>
+                    <div class = "tour-gallery">
+                        <svg  class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival1.jpg" /> 
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival2.jpg" /> 
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival3.jpg" />
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival4.jpg" />
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival5.jpg" />
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/eagle-festival6.jpg" />
+                            </svg>
+                        </div>
+                </section>
+
+                <div class = "price-included-excluded" id = "price-include-exclude-section">
+                    <article>
+                        <h2>Price included</h2>
+                        <ul>
+                            <li>Golden Eagle Festival tax</li>
+                            <li>All meals during the trip</li>
+                            <li>Drinking water</li>
+                            <li>All accommodations during the program</li>
+                            <li>Transportation, including gasoline</li>
+                            <li>All airport transfers</li>
+                            <li>Local guide</li>
+                            <li>Visa support</li>
+                            <li>Local flights (Ulaan Bataar-Ulgii-Ulaan Bataar)</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Price excluded</h2>
+                        <ul>
+                            <li>International Flights</li>
+                            <li>Visa</li>
+                            <li>Travel Insurance</li>
+                            <li>Charges for excess baggage</li>
+                            <li>Airport taxes</li>
+                            <li>Individual equipment</li>
+                            <li>All alcoholic drinkss</li>
+                        </ul>
+                    </article>   
+                </div>
+                <section id = "itinerary-section">
+                    <h2>Itinerary</h2>
+                    <div class = "itinerary-check">
+                        <i class="fa fa-check"></i><p>3 overnights in local hotel or ger camp in Ulgii</p>
+                    </div>
+                    <div class = "section-spacing" >
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 1</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">Dinner</p>
+                                    <p>Hotel/Ger</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Fly to western Mongolia</span><br> Fly to Ulgii, capital of Bayan-Ulgii province in westernmost Mongolia. This is the highest province and home to the country’s tallest peaks - the snow-capped Altai Mountains.  Bayan-Ulgii is Mongolia’s only Kazakh-majority province with Kazakh people making up about 90% of the population. Although Kazakhs and Mongols both share nomadic roots and practice a similar way of life centered around horses and livestock herding, there are some distinctions. For example, the Kazakh language is part of the Turkic language family whereas Mongolian is a Mongolic language. Kazakh culture is influenced by Islamic traditions whereas Mongolian culture is influenced by TIbetan Buddhism. The colorful ornaments inside a Kazakh yurt (nomadic felt home) and designs of the traditional clothes are quite different to their Mongolian counterpart as well.</p>
+                            </div>
+                        </div>
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 2-3</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Hotel/Ger Camp</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">The Eagle Festival</span><br>The art of falconry has been practiced in different parts of the world since ancient times. Birds of prey - falcons, hawks, and eagles - are kept and trained from a young age to hunt wild animals, initially out of necessity for meat and pelts. While the exact time and origin of this tradition is unknown, it became well established in Asia and the Middle East around 4,000 years ago and later spread out to neighboring regions along cultural and trade links, known as the Silk Roads, throughout different time periods.
+
+                                    The Kazakhs in the rugged mountains of western Mongolia have kept alive this special bond between human and bird for centuries - hunting from horseback with majestic golden eagles. To preserve this cultural heritage from going extinct in the rapidly changing modern times, the Golden Eagle Festival was first founded in 1999 at the province of Bayan-Ulgii in Mongolia’s far west. Now, Mongolia has the world’s most number of eagle hunters, so you could call this province, “the world’s center of eagle hunters.” The annual Golden Eagle Festival takes place in early October; and since its beginning, two smaller festivals have been added, both taking place in September. In 2011, it was recognized as a UNESCO World Heritage Cultural Event.
+                                    
+                                    The two day festival opens with a parade of participants dressed in their traditional hunting outfits on horseback with their majestic golden eagles on their arms. The eagle trainers are also rated by the judges for “who is the best dressed” and “who has the best groomed horse.” The speed, agility, and accuracy of the eagles are displayed and tested during the main two games. One, when the eagle is released from a cliff to glide down and grip a bait being dragged behind horseback. And another, when the eagle is released from a cliff while its trainer on horseback calls it to land on his/her arm. Additional games are: kukbar - a goatskin tug-of-war between two men on horseback, tiyn teru - coin grab from ground while galloping on horse, and kyz kuar - woman whipping man while chasing on horseback.
+                                    
+                                    In the late afternoon of the final day, winners of the festival will be announced during the awards ceremony. In the evening of one of the nights, we can enjoy a concert of traditional music at the theater in central Ulgii. Share farewell dinner as a celebratory conclusion for an eventful two-days.</p>
+                                </div>
+                            </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 3</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">Breakfast</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Fly to Ulaanbaatar</span><br> Fly to the country’s capital of Ulaanbaatar. Upon landing, meet our representative and get transferred to your hotel. Home for nearly half of the country’s population, Ulaanbaatar is the nation’s hub. The city reveals traces of its historical periods through its blend of modern glass buildings, Soviet-era architecture, TIbetan Buddhist monasteries, and the ger (yurt) districts spread out on the outskirts. The central square with a statue of Genghis Khan seated on his throne in front of the Parliament Building is worth a visit. If you have some time, there are a number of shops and museums to keep you busy.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class = "sticky-content-tour">
+                <div class = "sticky-content-tour-row">
+                    <p><span class = "bold font-size-30px">1190$</span> <br> price from</p>
+                    <a href="book-now.html" class = "view-more-button text-center " id="viewMoreButton">Book Now</a>
+                </div>
+                <hr class = "hr-white">
+                    <div class = "flex-row">
+                        <div class = "sticky-content-tour-col">
+                            <i class="fa fa-clock-o"></i>
+                            <i class="material-icons">graphic_eq</i>
+                            <i class="material-icons">graphic_eq</i>
+                        </div>
+                        <div class = "sticky-content-tour-col">
+                            <p class = "tour-duration bold-font-16px">4 days</p>
+                            <p class = "tour-duration bold-font-16px">High cultural rank</p>
+                            <p class = "tour-duration bold-font-16px">Easy physical ranking</p>
+                        </div>
+                    </div>
+                <button  class = "view-price-by-group-size " onclick="toggleExpand2(this)">View Price By Group Size <span class = "font-size-30px">+</span></button>
+                <div class="expandable-content-tour ">
+                    <div class="flex-col center">
+                        <div class = "sticky-content-tour-row">
+                            <p>PAX</p>
+                            <p>Price Per.P</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>2 persons</p>
+                            <p>1530$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>3-4 persons</p>
+                            <p>1420$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>5-6 persons</p>
+                            <p>1380$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>7-8 persons</p>
+                            <p>1310$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>9-10 persons</p>
+                            <p>1240$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>11-12 persons</p>
+                            <p>1190$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+
+        <footer class = "footer">
+            <div class = "footer-columns">
+                <div class = "footer-column">
+                    <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                    <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                </div>
+                <section class = "footer-column">
+                    <h2>Contact Us</h2>
+                    <div class = "footer-icons">
+                        <div class = "e-mail">
+                            <i class="fa fa-envelope"></i>
+                            <p>Jiger0325@gmail.com</p>
+                        </div>
+                        <div class = "phone">
+                            <i class="fa fa-mobile-phone"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "address">
+                            <i class="fa fa-location-arrow"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "footer-column">
+                    <h2>Follow Us On</h2>
+                    <div class = "follow-us">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </section>                
+            </div>
+            <hr>
+            <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+        <script src="JS.js"></script>
+    </body>
+</html>

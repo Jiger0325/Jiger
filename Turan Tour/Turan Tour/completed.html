@@ -1,0 +1,129 @@
+<!Doctype html>
+<html lang = "en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta name="description" content="Completed Page">
+        <title>Completed Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>   
+            <div class = "flex-col background-gray">
+                <div class = "flex-row three-text">
+                    <p class = "header">Choosing a trip</p>
+                    <p class = "header">Booking Information</p>
+                    <p class = "header">Finish!</p>
+                </div>
+                <div class = "flex-row vertical-center round-shapes">
+                    <div class = "round-shape center">
+                        <div class = "round-shape-small"></div>
+                    </div>
+                    <hr class = "hr-white-250px">
+                    <div class = "round-shape center">
+                        <div class = "round-shape-small"></div>
+                    </div>
+                    <hr class = "hr-white-250px">
+                    <div class = "round-shape center">
+                        <div class = "round-shape-small"></div>
+                    </div>
+                </div>
+
+                <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                <div class = "search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search" class = "searchbar">
+                        <i class="fa fa-search search-icon"></i>
+                    </form>
+                </div>
+                <div class="menu-bar" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> 
+                <ul class = "links"  id="menuLinks">
+                    <li class = "main-link"><a href = "Tours.html">Tours</a>
+                        <ul class = "sub-links">
+                            <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                            <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                            <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                            <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                            <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                            <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                        </ul>
+                    </li>  
+                    <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                    <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                    <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href = "Contact.html">Contact</a></li>
+                    <li><a href = "Tailormade.html">Tailormade</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="radio-group">
+            <label class="center">
+                <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+            </label>
+            <label class="center">
+                <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+            </label>
+        </div>
+
+        
+
+        <footer class = "completed">
+            <article class = "flex-col center">
+                <h2>Completed</h2>
+                <p>Thank you! Your request has been sent. We will get back to you soon.</p>
+            </article>
+            
+        </footer>
+      
+       
+        <footer class = "footer">
+            <div class = "footer-columns">
+                <div class = "footer-column">
+                    <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                    <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                </div>
+                <section class = "footer-column">
+                    <h2>Contact Us</h2>
+                    <div class = "footer-icons">
+                        <div class = "e-mail">
+                            <i class="fa fa-envelope"></i>
+                            <p>Jiger0325@gmail.com</p>
+                        </div>
+                        <div class = "phone">
+                            <i class="fa fa-mobile-phone"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "address">
+                            <i class="fa fa-location-arrow"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "footer-column">
+                    <h2>Follow Us On</h2>
+                    <div class = "follow-us">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </section>                
+            </div>
+            <hr>
+            <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+        <script src="JS.js"></script>
+    </body>
+</html>

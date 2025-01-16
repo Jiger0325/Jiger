@@ -1,0 +1,457 @@
+<!Doctype html>
+<html lang = "en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta name="description" content="Jeep Tour Page">
+        <title>Jeep Tour</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>   
+            <img class = "smaller-bg-image" src = "Images/Jeep_Tour.webp" alt = "Week-long Altai Jeep Tour">
+            <h1 class = "smaller-bg-header">Week-long Altai Jeep Tour</h1>
+            <p class = "smaller-bg-subheader">Authentic Experiences</p>
+            <div class = "smaller-bg-image-info">
+                <div class = "flex-col center">
+                    <i class="fa fa-clock-o"></i>
+                    <p class = "tour-duration bold-font-16px">Duration</p>
+                    <p class = "tour-duration bold-font-16px">14 days</p>
+                </div>
+                <div  class = "flex-col center">
+                    <i class="material-icons">graphic_eq</i>
+                    <p class = "tour-duration bold-font-16px">Physical Rating</p>
+                    <p class = "tour-duration bold-font-16px">44</p>
+                </div>
+                <div class = "flex-col center">
+                    <i class="fa fa-group"></i>
+                    <p class = "tour-duration bold-font-16px">Group Size</p>
+                    <p class = "tour-duration bold-font-16px">2-12 PAX</p>
+                </div>
+                <div class = "flex-col center">
+                    <i class="material-icons">graphic_eq</i>
+                    <p class = "tour-duration bold-font-16px">Cultural Rating</p>
+                    <p class = "tour-duration bold-font-16px">4</p>
+                </div>
+
+            </div>
+                <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                <div class = "search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search" class = "searchbar">
+                        <i class="fa fa-search search-icon"></i>
+                    </form>
+                </div>
+                <div class="menu-bar" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> 
+                <ul class = "links"  id="menuLinks">
+                    <li class = "main-link"><a href = "Tours.html">Tours</a>
+                        <ul class = "sub-links">
+                            <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                            <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                            <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                            <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                            <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                            <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                        </ul>
+                    </li>  
+                    <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                    <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                    <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href = "Contact.html">Contact</a></li>
+                    <li><a href = "Tailormade.html">Tailormade</a></li>
+                </ul>
+        </nav>
+
+        <div class="radio-group">
+            <label class="center">
+                <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+            </label>
+            <label class="center">
+                <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+            </label>
+        </div>
+          
+        
+        <section class = "tour-buttons">
+            <h1 class = "tour-top-buttons" id = "overview" onclick="OverviewSection()">Overview</h1>
+            <h1 class = "tour-top-buttons" id = "tour-gallery" onclick="TourGallerySection()">Tour Gallery</h1>
+            <h1 class = "tour-top-buttons" id = "price-include-exclude" onclick="PriceIncludeExcludeSection()">Price include/exclude</h1>
+            <h1 class = "tour-top-buttons" id = "itinerary" onclick="ItinerarySection()">Itinerary</h1>
+        </section>
+        <hr class = "hr-black-98vw">
+
+        <div class = "tour-content">
+            <section class = "left-column">
+                <div class = "overview" id = "overview-section">
+                    <h2>Overview</h2>
+                    <p>
+                        If you are looking for a unique week-long getaway to a remote and beautiful part of Mongolia, the country’s western frontier offers that and more. Not only will you be immersed in pristine nature, you will also have the chance to meet authentic local nomads and learn about their nomadic way of life.
+                        <br><br>
+                        There are several ethnic minority groups in Western Mongolia. The largest of them are the Kazakhs, who speak their own language and preserve their unique culture. The Mongolian Kazakhs are known for their ancient tradition of hunting with golden eagles. The world’s most number of eagle hunters are concentrated here, in their home province of Bayan-Ulgii.
+                        <br><br>
+                        The westernmost province of Bayan-Ulgii is also the home of Tavan Bogd National Park, which is one of the country’s most important national parks. Here you will see the snow-capped, five tallest peaks of Mongolia, which are part of the Altai Mountains, along with the country’s longest glacier of Potanin. Spend nights camping near pristine lakes and waterfalls under thousands of stars.
+                    </p>
+                </div>
+                <section id = "tour-gallery-section">
+                    <h2>Tour Gallery</h2>
+                    <div class = "tour-gallery">
+                        <svg  class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/Jeep1.jpg" /> 
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/Jeep2.jpg" /> 
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/Jeep3.jpg" />
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/Jeep4.jpg" />
+                            </svg>
+                            <svg class = "tour-gallery-image" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <image width="200" height="200" href="Images/Jeep5.jpg" />
+                            </svg>
+                    </div>
+                </section>
+
+                <div class = "price-included-excluded" id = "price-include-exclude-section">
+                    <article>
+                        <h2>Price included</h2>
+                        <ul>
+                            <li>Golden Eagle Festival tax</li>
+                            <li>All meals during the trip</li>
+                            <li>Drinking water</li>
+                            <li>All accommodations during the program</li>
+                            <li>Transportation, including gasoline</li>
+                            <li>All airport transfers</li>
+                            <li>Local guide</li>
+                            <li>Visa support</li>
+                            <li>Local flights (Ulaan Bataar-Ulgii-Ulaan Bataar)</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Price excluded</h2>
+                        <ul>
+                            <li>International Flights</li>
+                            <li>Visa</li>
+                            <li>Travel Insurance</li>
+                            <li>Charges for excess baggage</li>
+                            <li>Airport taxes</li>
+                            <li>Individual equipment</li>
+                            <li>All alcoholic drinkss</li>
+                        </ul>
+                    </article>   
+                </div>
+                <section id = "itinerary-section">
+                    <h2>Itinerary</h2>
+                    <div class = "flex-col">
+                        <div class = "itinerary-check">
+                            <i class="fa fa-check"></i><p>2 overnights in 4 star hotel in UB</p>
+                        </div>
+                        <div class = "itinerary-check">
+                            <i class="fa fa-check"></i><p>1 overnight in local hotel or ger camp in Bayan-Ulgii</p>
+                        </div>
+                        <div class = "itinerary-check">
+                            <i class="fa fa-check"></i><p>10 tented overnights</p>
+                        </div>
+                    </div>
+                    
+                    <div class = "section-spacing" >
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 1</p>
+                                <div class = "tour-col">
+                                    <p>Hotel</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Arrival in Ulaanbaatar</span><br>Upon your arrival in the capital, Ulaanbaatar, you will be met by our representative and transferred to a centrally located hotel. After checking into your hotel, we will take you on a city sightseeing tour. Ulaanbaatar reveals traces of its past transitions through its blend of modern glass buildings, Soviet-era architecture, TIbetan Buddhist monasteries, and the ger (yurt) districts spread out on the outskirts.</p>
+                            </div>
+                        </div>
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 2</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Fly to western Mongolia</span><br>Take a flight to Ulgii, capital of Mongolia’s westernmost province of Bayan-Ulgii. The majority of the population of this province are Kazakhs, with their own culture and language. Upon landing at the airport, you’ll be greeted by your English-speaking local guide, driver, and expedition cook. Today we’ll drive to the region of Khoton and Khurgan Lakes, stopping for lunch on the way, and stay overnight at a camping site on Biluut Hill. Here you can see ancient rock carvings of Turkic origin dating from 1,500-2,000 years ago. Total driving time is approximately 6-7 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 3</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike to Khoton-Khurgan Lakes</span><br>Start trekking this morning and reach Khoton and Khurgan Lakes. Situated at the foot of the Altai Mountains within the Tavan Bogd National Park, these picturesque lakes are connected by a natural channel and are amongst the freshest of all lakes in Mongolia. Seated at an elevation of about 2,000 meters above sea level, Khoton-Khurgan is home to a number of fish. Support car(s) will follow nearby. Total hiking time is approximately 6 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 4</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike up Bear Valley via Whitewater River</span><br>The group will trek through Bear Valley, ascending along the Whitewater River. There are two white rivers originating from two sides of Mongolia’s highest mountain range called Altai Tavan Bogd, meaning the “Five Holy Peaks” of the Altai. This particular river originates from south of the Altai Mountains and eventually drains into Khoton Lake. It is one of the most beautiful rivers in Mongolia, known for its stunning scenery. 
+
+                                    The Bear Valley is virtually untouched by livestock or human activities, thus retaining its pristine nature. While ascending through Bear Valley, we will come across freshwater rivers flowing down from the mountains, a high waterfall, beautiful heart-shaped lake, steep cliffs, and perhaps some wildlife.
+                                    
+                                    There will be camel support from today onwards. Cars will head back to Ulgii. Total hiking time is approximately 5 hours.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 5</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Cross the highest pass</span><br>Today is the most interesting and difficult day of our trekking trip. We will traverse our highest pass, which is steep and craggy on both sides. We will walk one after another in a single file on a camel caravan trail during both the ascent and descent. Named Takhilt Pass, it stands 3,600 meters above sea level and is the best and highest viewpoint to behold the Altai Mountains. Some people have spotted wildlife such as ibex (mountain goat) and gray wolf while crossing this pass. Total hiking time is approximately 7 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 6</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike to Shiveet Mountain</span><br>Shiveet Mountain is sacred for the local Tuvan people, who forbid the act of hunting around this mountain. Due to this, there has been growth in the number of ibexes and sometimes it is possible to see 50-100 of them at once. There are three large petroglyphic complexes in the Mongolian Altai, which are inscribed on the World Heritage List. One of them is here at Shiveet Mountain. The petroglyphs here date from pre-Bronze Age to the Turkic period, and display an array of interesting and rare images. Total hiking time is approximately 6 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 7</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike to White River Valley</span><br>The locals who live near the upper White River are Tuvans, who have their own culture and language. Tuvans are nomadic livestock herders, who are surmounting nature's challenges of living on highlands of the Altai Mountains. They live in gers (yurts) and their clothing style is similar to that of the Mongolian nomads. They have a heritage of practicing shamanism. Total hiking time is approximately 5 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 8</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike to basecamp of Tavan Bogd</span><br>Today’s trek is about 18 km to the basecamp of Tavan Bogd, translated as “Holy Five,” which are the five highest peaks of Mongolia. These peaks are part of the Altai Mountain range, where four countries of Mongolia, Kazakhstan, China, and Russia converge. En route, you will see Potanin and Alexander Glaciers. Potanin is Mongolia’s longest glacier, stretching about 14 km. Camp is located at around 3,000 m ASL.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 9</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Leisure day</span><br>Today is a free day at the basecamp. This is an opportunity to explore the nearby glaciers and capture nature photos. Potanin and Alexander are Mongolia’s largest glaciers. Initially, a Russian scholar named Potanin, whom the Potanin Glacier is named after, had written in a book that this glacier is 20 km long. Since then due to climate change, the glaciers have shrunk year by year. </p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 10</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Climbing Malchin Peak</span><br>Climb to Malchin Peak (4,050 m), which is the lowest of the Holy Five Peaks. It is located on the Mongolian-Russian border. You do not need specialized mountain climbing equipment for this climb. Reward yourself with a panoramic view on top of Malchin Peak before heading back to basecamp.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 11</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Hike to Oigor River</span><br>There are two entrances on either side of the Altai Tavan Bogd National Park. Not to repeat the same way, we will head to the entrance located at the Oigor River and camp there overnight. Only Kazakh people live on this side. The drivers with their cars will meet us here. Today’s hike is approximately 16 km.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 12</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Ger camp/Hotel</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Drive back to Ulgii</span><br>On the drive back to Ulgii, we’ll visit a Kazakh family who are also Eagle Hunters. This province has the most number of eagle hunters compared to anywhere else in the world, due to the Kazakh people who keep alive the ancient tradition of hunting with golden eagles. Back in Ulgii, we’ll have some time to do arts and handicrafts shopping. The handicraft shop here helps create jobs and support local women to earn income from home while looking after their children. Tonight you can stay either at our own-run Ger Camp or at our small hotel named the Eagle’s Nest. Enjoy a well-deserved, relaxing hot shower this evening!</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 13</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">B/L/D</p>
+                                    <p>Hotel</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Fly to Ulaanbaatar</span><br>Take a return flight to Ulaanbaatar. Transfer to your hotel upon arrival and meet up later for farewell dinner.</p>
+                            </div>
+                        </div>
+
+                        <div class = "itinerary">
+                            <div class = "food-accomodation-day">
+                                <p class = "c196DAA-bold-text" >Day 14</p>
+                                <div class = "tour-col">
+                                    <p class = "gray-text">Breakfast</p>
+                                </div>
+                            </div>
+                            <div class = "itinerary-bg">
+                                <p><span class = "bold">Departure day</span><br>Transfer to the airport for your departure flight.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <div class = "sticky-content-tour">
+                <div class = "sticky-content-tour-row">
+                    <p><span class = "bold font-size-30px">800$</span> <br> price from</p>
+                    <a href="book-now.html" class = "view-more-button text-center " id="viewMoreButton">Book Now</a>
+                </div>
+                <hr class = "hr-white">
+                <div class = "flex-row">
+                    <div class = "sticky-content-tour-col">
+                        <i class="fa fa-clock-o"></i>
+                        <i class="material-icons">graphic_eq</i>
+                        <i class="material-icons">graphic_eq</i>
+                    </div>
+                    <div class = "sticky-content-tour-col">
+                        <p class = "tour-duration bold-font-16px">4 days</p>
+                        <p class = "tour-duration bold-font-16px">High cultural rank</p>
+                        <p class = "tour-duration bold-font-16px">Easy physical ranking</p>
+                    </div>
+                </div>
+                <button  class = "view-price-by-group-size " onclick="toggleExpand2(this)">View Price By Group Size <span class = "font-size-30px">+</span></button>
+                <div class="expandable-content-tour ">
+                    <div class="flex-col center">
+                        <div class = "sticky-content-tour-row">
+                            <p>PAX</p>
+                            <p>Price Per.P</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>2 persons</p>
+                            <p>2620$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>3-4 persons</p>
+                            <p>2250$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>5-6 persons</p>
+                            <p>2040$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>7-8 persons</p>
+                            <p>1930$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>9-10 persons</p>
+                            <p>1780$</p>
+                        </div>
+                        <hr class = "hr-black">
+                        <div class = "sticky-content-tour-row">
+                            <p>11-12 persons</p>
+                            <p>1630$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+
+        <footer class = "footer">
+            <div class = "footer-columns">
+                <div class = "footer-column">
+                    <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                    <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                </div>
+                <section class = "footer-column">
+                    <h2>Contact Us</h2>
+                    <div class = "footer-icons">
+                        <div class = "e-mail">
+                            <i class="fa fa-envelope"></i>
+                            <p>Jiger0325@gmail.com</p>
+                        </div>
+                        <div class = "phone">
+                            <i class="fa fa-mobile-phone"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "address">
+                            <i class="fa fa-location-arrow"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "footer-column">
+                    <h2>Follow Us On</h2>
+                    <div class = "follow-us">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </section>                
+            </div>
+            <hr>
+            <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+        <script src="JS.js"></script>
+    </body>
+</html>
