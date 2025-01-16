@@ -1,0 +1,178 @@
+<!Doctype html>
+<html lang = "en">
+   
+    <head>
+      <meta charset="UTF-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <title>Contact Page</title>
+      <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    </head>
+        
+    <body>
+      <nav>
+        <section>
+            <img class = "smaller-bg-image" src = "Images/Camping.jpg" alt = "Camping">
+            <h2 class = "smaller-bg-header">Contact Us</h2>
+            <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+            <div class = "search">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search" name="search" class = "searchbar">
+                    <i class="fa fa-search search-icon"></i>
+                </form>
+            </div>
+            <div class="menu-bar" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div> 
+            <ul class = "links"  id="menuLinks">
+                <li class = "main-link"><a href = "Tours.html">Tours</a>
+                    <ul class = "sub-links">
+                        <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                        <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                        <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                        <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                        <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                        <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                    </ul>
+                </li>  
+                <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                <li><a href = "Contact.html">Contact</a></li>
+                <li><a href = "Tailormade.html">Tailormade</a></li>
+            </ul>
+        </section> 
+      </nav>
+
+      <div class="radio-group">
+        <label class="center">
+            <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+        </label>
+        <label class="center">
+            <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+        </label>
+      </div>
+
+      <div class = "contact">
+        <div class = "contact-icons">
+          <div class = "contact-icon">
+            <i class="fa fa-location-arrow large-icon"></i>
+            <p class = "header">Address</p>
+            <p>Street 12, Olgiy City, Bayan-Olgiy Province, Mongolia</p>
+          </div>
+          <div class = "contact-icon">
+            <i class="fa fa-envelope large-icon"></i>
+            <p class = "header">Email</p>
+            <p>Jiger0325@gmail.com <br>I am available every day from 9 am to 9 pm (UTC+08:00).</p>
+          </div>
+          <div class = "contact-icon">
+            <i class="fa fa-mobile-phone large-icon"></i>
+            <p class = "header">Phone</p>
+            <p>+976 9404 0325 <br> I am available every day from 9 am to 9 pm  (UTC+08:00).</p>
+          </div>
+        </div>
+      </div>
+
+      <section class = "location">
+          <h1>Our Location on OpenStreetMap</h1>
+          <div id="map"></div>
+      </section>
+
+
+
+      <section class = "form">
+        <h1>Request Form</h1>
+        <p>To submit a booking request, please fill out the information below.</p>
+        <div class = "form-container">
+          <div class = "flex-col">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" class = "input">
+          </div>
+          <div class = "flex-col">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" class = "input">
+          </div>
+          <div class = "flex-col">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class = "flex-col">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" class = "input">
+          </div>
+          <div class="flex-col">
+            <label for="message">Message</label>
+            <textarea  class = "textarea" id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+          </div>
+        </div>
+        <div class = "submit-button">
+            <a href="completed.html" class = "view-more-button-larger text-center " id="submitButton">Submit</a>
+        </div> 
+      </section>
+      
+      <footer class = "footer">
+        <div class = "footer-columns">
+            <div class = "footer-column">
+                <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+            </div>
+            <section class = "footer-column">
+                <h2>Contact Us</h2>
+                <div class = "footer-icons">
+                    <div class = "e-mail">
+                        <i class="fa fa-envelope"></i>
+                        <p>Jiger0325@gmail.com</p>
+                    </div>
+                    <div class = "phone">
+                        <i class="fa fa-mobile-phone"></i>
+                        <p>+976 94 04 03 25</p>
+                    </div>
+                    <div class = "whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                        <p>+976 94 04 03 25</p>
+                    </div>
+                    <div class = "address">
+                        <i class="fa fa-location-arrow"></i>
+                        <p>Address</p>
+                    </div>
+                </div>
+            </section>
+            <section class = "footer-column">
+                <h2>Follow Us On</h2>
+                <div class = "follow-us">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </section>                
+        </div>
+        <hr class = "hr">
+        <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+    <script src="JS.js"></script>
+    <!--Open Street Map JavaScript-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      // Your updated coordinates
+      var userLat = 48.964618;
+      var userLng = 89.954719;
+
+      // Create the map and center it on your location
+      var map = L.map('map').setView([userLat, userLng], 13);
+
+      // Add OpenStreetMap tile layer
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Add a marker for your location
+      var marker = L.marker([userLat, userLng]).addTo(map);
+      marker.bindPopup('We are here').openPopup();
+    </script>
+    </body>
+</html>

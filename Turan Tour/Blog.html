@@ -1,0 +1,186 @@
+<!Doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Blog  Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <section>
+                <img class = "smaller-bg-image" src = "Images/Tavan-bogd.webp" alt = "Altai Tavan Bogd National Park">
+                <h2 class = "smaller-bg-header">Blogs</h2>
+                <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                <div class = "search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search" class = "searchbar">
+                        <i class="fa fa-search search-icon"></i>
+                    </form>
+                </div>
+                <div class="menu-bar" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> 
+                <ul class = "links"  id="menuLinks">
+                    <li class = "main-link"><a href = "Tours.html">Tours</a>
+                        <ul class = "sub-links">
+                            <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                            <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                            <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                            <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                            <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                            <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                        </ul>
+                    </li>  
+                    <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                    <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                    <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href = "Contact.html">Contact</a></li>
+                    <li><a href = "Tailormade.html">Tailormade</a></li>
+                </ul>
+            </section> 
+        </nav>
+
+
+        <div class="radio-group">
+            <label class="center">
+                <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+            </label>
+            <label class="center">
+                <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+            </label>
+        </div>
+       
+        <div class = "flex-col vertical-center">
+            <div class = "blog " id="western-mongolia"> 
+                <img  class = "blog-image" src = "Images/Western-Mongolia.jpg" alt = "Western Mongolia">
+                <article class = "blog-info">
+                    <h2 class = "header">Western Mongolia</h2>
+                    <p>The western region of Mongolia has for much of its history been on the boundary between civilizations, between Chinese-dominated Asian culture to the east and European cultures to the west divided by the Altai mountains and the Tibetan plateau to the south with only a narrow gap just south of what is today Mongolia. This location near the crossroads of civilization has left the landscape littered with the history of many groups either originating in these mountain valleys or passing through on their way to conquest. The archeological history of the region dates back several thousand years, with petroglyphs, Turkic standing stone statues, various tombs, monuments, and artifacts spread throughout the deserts, mountain passes, steps, and forests of the area. The descendants of these ancient artisans today still herd animals in a semi-nomadic lifestyle that is similar to the times of Genghis Khan, with small variations depending on which of the roughly 12 tribes and nationalities live here. Though often much harder to find than the cave drawings or nomadic ger-dwellers, many rare and endangered animals inhabit the region including the snow leopard, Argali sheep, ibex, Przewalski horse, and more common animals like the gray wolf, Corsac fox, golden eagle, lynx, brown bear, and many smaller animals.</p>
+                </article>
+            </div>
+            <div class = "blog" id="golden-eagle-festival"> 
+                <img  class = "blog-image" src = "Images/Eagle_Festival.webp" alt = "Golden Eagle Festival">
+                <article class = "blog-info">
+                    <h2 class = "header">Golden Eagle Festival</h2>
+                    <p>The Golden Eagle Festival, or simply Eagle Festival (Mongolian: Бүргэдийн наадам / Bürgediin naadam, [purɡɘˈtiŋ ˈnaːtəm]; Kazakh: Бүркіт той / Bürkıt toi, [b̥ʉrˈkɘt tʰɔj]), is an annual neo-traditional festival held in Bayan-Ölgii aimag, Mongolia.[1] In the eagle festival, Kazakh eagle hunters (Burkitshi) celebrate their heritage and compete in lure-based and timed eagle handling events with specially trained golden eagles, showing off the skills both of the birds and their trainers (said skills may not necessarily translate to actual hunting prowess: See explanatory information below in paragraph starting with the words "Despite the above-noted descriptions" ). Prizes are awarded for speed, agility and accuracy, as well as for the best traditional Kazakh dress, and more.[2][3]
+                        The Eagle Festival is held during the first weekend in October, run by the Mongolian Eagle Hunter's Association. Dark, rocky mountainous terrain forms the backdrop to the festivities, which incorporate an opening ceremony, parade, cultural exhibitions, demonstrations and handcrafts in the centre of the town of Ölgii, followed by sporting activities and competitions 4 kilometres (2.5 mi) outside of town towards the mountains. </p>
+                </article>
+            </div>
+            <div class = "blog" id="nauryz-festival"> 
+                <img  class = "blog-image" src = "Images/Nauryz-festival.webp" alt = "Nauryz Festival">
+                <article class = "blog-info">
+                    <h2 class = "header">Nauryz Festival</h2>
+                    <p>Nauryz, which means "new day" in Persian, is one of the most important national holidays in Kazakhstan, marking the advent of spring and the beginning of the new year. With a history of over 3,000 years, this ancient festival is a time for people to come together and enjoy festivities with great enthusiasm and joy.
+
+                        The festival is not unique to Kazakhstan, as it can be traced back to the ancient nomadic tribes and is observed by many countries along the Silk Road, including those in Central Asia, the Balkans, the Caucasus, the Black Sea region, and the Middle East. Thus the holiday is known by various names such as Navruz, Nawruz, Norooz, Nowruz and Nevruz in different countries. 
+                        
+                        The festivity usually falls on March 21st or 22nd each year. But this year the Kazakhstan government implemented a new format of the Nauryz celebration - the Nauryznama decade, which spans 10 days from Korisu (Greetings) Day on March 14 to Tazaru (Cleansing) Day on March 23.</p>
+                </article>
+            </div>
+            <div class = "blog" id="kazakh-nomads"> 
+                <img  class = "blog-image" src = "Images/KazakhNomads.jpg" alt = "Kazakh Nomads">
+                <article class = "blog-info">
+                    <h2 class = "header">Kazakh Nomads</h2>
+                    <p>The Kazakhs or Qazaqs (Kazakh: қазақтар, qazaqtar, قازاقتار, [qazaq'tar] ⓘ) are a Turkic ethnic group native to Central Asia and Eastern Europe. There are Kazakh communities in Kazakhstan's border regions in Russia, northern Uzbekistan, northwestern China (Ili Kazakh Autonomous Prefecture), western Mongolia (Bayan-Ölgii Province) and Iran (Golestan province).[28] The Kazakhs arose from the merging of various medieval tribes of Turkic and Mongolic origin in the 15th century.[29][30][31][32][33][34]
+
+                        Kazakh identity was shaped following the foundation of the Kazakh Khanate between 1456 and 1465, when following the disintegration of the Turkified state of Golden Horde, several tribes under the rule of the sultans Janibek and Kerei departed from the Khanate of Abu'l-Khayr Khan in hopes of forming a powerful khanate of their own.
+                        
+                        The term Kazakh is used to refer to ethnic Kazakhs, while the term Kazakhstani refers to all citizens of Kazakhstan, regardless of ethnicity.[</p>
+
+                </article>
+            </div>
+            <div class = "blog" id="tavan-bogd"> 
+                <img  class = "blog-image" src = "Images/Tavan-bogd.webp" alt = "Altai Tavan Bogd National Park">
+                <article class = "blog-info">
+                    <h2 class = "header">Altai Tavan Bogd National Park</h2>
+                    <p>Altai Tavan Bogd National Park (Mongolian: Алтай Таван богд байгалийн цогцолбор газар, ᠠᠯᠲᠠᠢᠲᠠᠪᠤᠨᠪᠣᠭᠳᠠᠪᠠᠶᠢᠭᠠᠯ ᠤᠨᠴᠣᠭᠴᠠᠯᠠᠪᠤᠷᠢᠭᠠᠵᠠᠷ Altai five saints nature complex) is a national park in Bayan-Ölgii Province of western Mongolia. The park includes the Mongolian side of the Tavan Bogd massif, which is divided by the triple border with Russia and China in the Altai Mountains.[1][2]
+
+                        It covers 6362 square kilometres and is located south of Tavan Bogd, the highest mountain of Mongolia. It includes the lakes Khoton, Khurgan, and Dayan. The protected area is inhabited by species such as the Argali sheep, Ibex, Red deer, Beech marten, Moose, Snow leopard, Snow cock, and Golden eagle.
+                        
+                        The (UNESCO) World Heritage Site Petroglyphic Complexes of the Mongolian Altai is located inside Altai Tavan Bogd National Park.[3] The World Heritage Site covers three locations with several thousand petroglyphs and Turkic monoliths, including the Tsagaan Salaa Rock Paintings with over 10,000 cave drawings in 15 km of river valley.[4]</p>
+                </article>
+            </div>
+            <div class = "blog" id="shiveet-hairhan"> 
+                <img  class = "blog-image" src = "Images/Shiveet-Hairhan.jpg" alt = "Shiveet Hairkhan Mountain">
+                <article class = "blog-info">
+                    <h2 class = "header">Shiveet Hairhan Mountain</h2>
+                    <p>Shiveet Khairkhan Mountain rises 3281 meters above sea level located within the upper reaches Tsagaan Gol valley within the region of the Tavan Bogd national park.
+
+                        It's well placed, making a perfect stop for those with time who are also visiting the Potanin Glacier and Tavan Bogd mountain area. Most of the carvings are located at the lower sections of the Shiveet Khairkhan Mountain found on rocks scattered to the east banks of the Khar Salaa River.
+
+                        A majority of the 10,000 carvings fall within an area totalling 10-12 square kilometres.
+                        
+                        The very best petroglyphs sit at the foot of the mountain on a large slab of polished glacial bedrock. As one's eyes adapt to the markings on the rock face, it is easy to make out the numerous pictures. These ancient forms date from the neolithic period to the bronze age and consist of wild animals, people, hunters riding horses and even wagons.</p>
+                </article>
+            </div>
+            <div class = "blog" id="museum"> 
+                <img  class = "blog-image" src = "Images/Museum.jpeg" alt = "Museum">
+                <article class = "blog-info">
+                    <h2 class = "header">The Museum Of Bayan-Ulgii Province</h2>
+                    <p>The Museum of Bayan-Ulgii Province (Mongolian: Баян-Өлгий аймгийн музей) is a museum in Ölgii, Bayan-Ölgii Province, Mongolia. The museum is housed in a three-story building. The museum features a shop located outside the building. The ground floor displays various stuffed wild animals. The upper floor displays information regarding the local history. The top most floor displays the culture and life of the local tribes. This three story museum provides a great starting point for trips through Bayan-Olgii with displays on local culture, history, and nature. The top floor offers displays of local tribal culture and life, as well as a full size Kazakh ger with photo opportunities. The second floor provides a brief look at the local history, especially the Communist era from 1924 to 1991. The ground floor has a wide variety of stuffed wildlife and a gift shop with traditional Kazakh handicrafts. Outside, you can see a broad selection of standing stones including deer stones and Turkic image stones and another shop selling Kazakh embroideries and handbags. </p>
+                </article>
+            </div>
+            <div class = "blog" id="naadam"> 
+                <img  class = "blog-image" src = "Images/Naadam-festival.jpeg" alt = "Naadam">
+                <article class = "blog-info">
+                    <h2 class = "header">Naadam Festival</h2>
+                    <p>Naadam (Mongolian Naadam Festival) (Mongolian: Наадам, classical Mongolian: ᠨᠠᠭᠠᠳᠤᠮNaɣadum, [ˈnaːdəm], literally "games") is a traditional festival celebrated in Mongolia, Inner Mongolia and Tuva. The festival is also locally termed "eriin gurvan naadam" (эрийн гурван наадам), "the three games of men".
+
+                        The games are Mongolian wrestling, horse racing, and archery, and are held throughout the country during midsummer. Women have started participating in the archery and girls in the horse-racing games, but not in Mongolian wrestling.
+                        
+                        In 2010, Naadam was inscribed on the Representative List of the Intangible Cultural Heritage of Humanity of UNESCO.</p>
+                </article>
+            </div>
+        </div>
+
+              
+    
+                    
+        <footer class = "footer">
+            <div class = "footer-columns">
+                <div class = "footer-column">
+                    <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                    <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                </div>
+                <section class = "footer-column">
+                    <h2>Contact Us</h2>
+                    <div class = "footer-icons">
+                        <div class = "e-mail">
+                            <i class="fa fa-envelope"></i>
+                            <p>Jiger0325@gmail.com</p>
+                        </div>
+                        <div class = "phone">
+                            <i class="fa fa-mobile-phone"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "address">
+                            <i class="fa fa-location-arrow"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "footer-column">
+                    <h2>Follow Us On</h2>
+                    <div class = "follow-us">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </section>                
+            </div>
+            <hr class = "hr">
+            <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+        <script src="JS.js"></script>
+    </body>
+</html>

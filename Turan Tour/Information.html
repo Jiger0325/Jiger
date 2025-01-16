@@ -1,0 +1,308 @@
+<!Doctype html>
+<html lang = "en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Information Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <section>
+                <img class = "smaller-bg-image" src = "Images/Syrgaly2.jpg" alt = "Syrgaly 2">
+                <h2 class = "smaller-bg-header">Information</h2>
+                <a href="Home.html"><img  class = "navbar-logo" src="Images/Logo.png" alt = "navigation bar logo"></a>
+                <div class = "search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search" class = "searchbar">
+                        <i class="fa fa-search search-icon"></i>
+                    </form>
+                </div>
+                <div class="menu-bar" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> 
+                <ul class = "links"  id="menuLinks">
+                    <li class = "main-link"><a href = "Tours.html">Tours</a>
+                        <ul class = "sub-links">
+                            <li><a href="EagleFestival.html">Golden&nbsp;Eagle&nbsp;Festival&nbsp;Tour</a></li>
+                            <li><a href="HikingTour.html">Hiking&nbsp;Tour</a></li>
+                            <li><a href="HorsebackRiding.html">Horseback&nbsp;Riding&nbsp;Tour</a></li>
+                            <li><a href="KazakhNomads.html">Stay&nbsp;with&nbsp;Kazakh&nbsp;Family</a></li>
+                            <li><a href="WinterMigration.html">Nomad's&nbsp;Winter&nbsp;Migration</a></li>
+                            <li><a href="JeepTour.html">Jeep&nbsp;Tour</a></li>   
+                        </ul>
+                    </li>  
+                    <li class = "main-link"><a href = "Blog.html">Blog</a></li>
+                    <li class = "main-link"><a href = "Information.html">Information</a></li>    
+                    <li><a href = "AboutUs.html">About&nbsp;Us</a></li>
+                    <li><a href = "Contact.html">Contact</a></li>
+                    <li><a href = "Tailormade.html">Tailormade</a></li>
+                </ul>
+            </section> 
+        </nav>
+
+        <div class="radio-group">
+            <label class="center">
+                <input type="radio" name="theme" id="lightMode" onchange="setTheme('light')"> Light Mode
+            </label>
+            <label class="center">
+                <input type="radio" name="theme" id="darkMode" onchange="setTheme('dark')"> Dark Mode
+            </label>
+        </div>
+           
+        <div class = "information">
+            <div class = "sticky-content-information">
+                <div class = "flex-row center space-between sticky-content-subinfo"  id = "booking-payment" onclick="BookingPaymentSection()">
+                    <div class = "name-icon">
+                        <i class="fa fa-file-o"></i>
+                        <p>Booking & Payment</p>
+                    </div>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+                <hr class = "hr-black">
+                <div class = "flex-row center space-between sticky-content-subinfo" id = "visa-insurance"   onclick="VisaInsuranceSection()">
+                    <div class = "name-icon">
+                        <i class="fa fa-file-o"></i>
+                        <p>Visa & Insurance</p>
+                    </div>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+                <hr class = "hr-black">
+                <div class = "flex-row center space-between sticky-content-subinfo" id = "responsibilities" onclick="ResponsibilitiesSection()">
+                    <div class = "name-icon">
+                        <i class="fa fa-file-o"></i>
+                        <p>Responsibilities</p>
+                    </div>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+                <hr class = "hr-black">
+                <div class = "flex-row center space-between sticky-content-subinfo"  id = "health-safety" onclick="HealthSafetySection()" >
+                    <div class = "name-icon">
+                        <i class="fa fa-file-o"></i>
+                        <p>Health & Safety</p>
+                    </div>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+                <hr class = "hr-black">
+                <div class = "flex-row center space-between sticky-content-subinfo"  id = "faq" onclick="FaqSection()">
+                    <div class = "name-icon">
+                        <i class="fa fa-file-o"></i>
+                        <p>FAQ</p>
+                    </div>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </div>
+            </div>
+
+            <div class = "sub-info">
+                <section class = "info-space" id="booking-payment-section">
+                    <h2>Booking & payment</h2>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Trip confirmation and payment</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>In order to confirm your trip, there needs to be a deposit of 400 USD per person along with sending us the filled in booking form. After receiving your deposit and information, we will send you the details for paying the balance. Until the deposit has been made, we will not confirm your booking and a contract will not come into existence.
+                                    The balance of the trip must be paid in full at least one week prior to the start of the trip. If the balance is not paid within the specified period, the booking will be considered cancelled and the cancellation fee will be charged as detailed below. Payment can be made by bank transfer, international money transfer services, or VISA and Master cards.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Price</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>The price of the trip should be agreed upon by both parties at the time of planning the trip. We can organize private or group tours.
+                                    The price of the trip includes the price of a hotel room for two people. If you wish, you can get your own room for an additional fee. You must pay on your own for any other fees and additional activities not mentioned in the itinerary.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Cancellation</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>A service fee of 100 USD per person will be charged for cancellations made at least sixty days prior to the start of the trip and the balance will be refunded. Alternatively, both parties may agree that the deposit for the trip may be considered as a deposit for another trip within one to two years. If you cancel your booking after full payment, you will be charged the following fees:
+
+                                    43-59 days before the start of the trip: 20% of the trip cost
+                                    29-42 days before the start of the trip: 25% of the trip cost
+                                    15-28 days before the start of the trip: 30% of the trip cost
+                                    14 days before the start of the trip (or if you refuse to go on the trip): 50% of the trip cost
+                                    Although we rarely had trip cancellations in the past, anyone has the right to cancel for any reason. If we cancel the trip, we will give you a full refund.</p>
+                            </div>
+                        </div>
+                </section>
+
+
+
+                <section class = "info-space" id="visa-insurance-section">
+                    <h2>Visa & Insurance</h2>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Passport & Visa</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div >
+                            <div class="expandable-content-information">
+                                <p>Visas can be obtained from the Embassy and Consulate of Mongolia in your country. If there is no Mongolian Embassy or Consulate in your country, you can get a one-month visa on the spot at the Ulaanbaatar airport or railway station. Due to the declaration of 2023-2025 as the “Years to visit Mongolia” by the Government of Mongolia, citizens of some countries have been given the opportunity to visit Mongolia for 30-90 days without a visa. You can check by following the link: https://consul.mn/visa/c/18
+                                    Also, please visit the following page for visa information: https://immigration.gov.mn/mn/vizijn-zvshrl/</p>
+                            </div >
+                        </div>
+                        <div >
+                            <div class="row-direction2">
+                                <p>Insurance</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div  class="expandable-content-information">
+                                <p>We believe your safety is our top priority. Therefore, we recommend that you get travel insurance to prevent any mishaps. You can get travel insurance from www.WorldNomads.com which is used by citizens of more than 150 countries.
+                                    This is designed for adventure travellers and includes services such as overseas medical services, medical evacuation, and baggage issues.</p>
+                            </div >
+                        </div >
+                </section>
+
+
+                <section class = "info-space" id="responsibilities-section">
+                    <h2>Responsibilities</h2>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Your Responsibilities</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>You must notify us prior to the trip if you have any chronic medical conditions and if you use any special medications or special equipment.
+                                    Let us know if you have any dietary needs or are a vegetarian.
+                                    Throughout the trip, you must follow the instructions of the local guide to ensure the safety and well-being of the group.
+                                    Timely payment of agreed trip price.
+                                    Do not drink excessive alcohol during the trip and do not disturb others.
+                                    Treat drivers, cooks, and other people working in the travel team with respect.
+                                    Be punctual.
+                                    Travel without littering.
+                                    No smoking in any vehicle.
+                                    It is always your personal responsibility to take possession of your personal belongings while meeting the passport and visa requirements during your trip.</p>
+                                </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Our Responsibilities</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>Prepare and present the itinerary carefully before starting the trip.
+                                    Provide advice on preventing possible dangers and difficulties during the trip.
+                                    Tour guide and the crew will be at the scheduled meeting point at the start of the trip.
+                                    Ensuring technical integrity of the vehicle(s) that will be going on the trip.
+                                    We are not responsible for any expenses or difficulties incurred before the start of the trip.
+                                    We are not responsible for the consequences of any terrorist attack, political unrest, war, earthquake, landslide, cancellation or delay of airline or train operations.
+                                    No compensation will be given for unused transport, accommodation, services or travel features.
+                                    All information is correct at the time of publication and any major changes will be notified to you at the time of booking.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Complaint</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>
+                                    Any problems or complaints about the tour should be raised with the guide as soon as possible and we will rectify the problem and take appropriate action.</p>
+                            </div>
+                        </div>
+                </section>
+
+
+
+                <section class = "info-space" id="health-safety-section">
+                    <h2>Health & Safety</h2>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Health</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>You should always have medical insurance arranged before traveling to Mongolia. Medical bills, especially when a medical evacuation is needed, can be substantial. Make sure you have adequate travel health insurance and accessible funds to cover the cost of any medical treatment abroad and repatriation. Foreign nationals requiring medical treatment in Mongolia, are required to pay 80% of the total cost when receiving treatment. The remaining balance paid after treatment. We advise you wear a helmet when riding animals. If you need emergency medical assistance during your trip, dial +976 103 and ask for an ambulance. You should contact your insurance/medical assistance company as soon as possible to inform them of what has happened. There have been isolated incidents of bubonic plague in some rural areas of Mongolia, caught by consuming marmot meat. The meat is a delicacy in some rural areas although it is illegal to hunt for marmot in Mongolia. 
+                                    When travelling in rural areas, you should avoid marmot meat and follow the latest advice from the local authorities. If you think you have been exposed to Bubonic Plague whilst traveling in Mongolia, you should immediately report to the nearest hospital and call the National Infectious Disease Centre on +976 100. Due to the size of the county, those injured in remote parts of the country may have long travel times before reaching the nearest medical facility. The cost of treatment is fixed, and most procedures are costed so you should be able to confirm the cost before treatment. You should always carry a first aid kit, have supplies of over-the-counter medicines you may require for your trip. You should always bring any regular prescription drugs you may need with you, and spare, just in case.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>Safety</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>Traveling across the Mongolian countryside can be difficult and potentially dangerous if you are not familiar with the terrain. Mongolia does not have an extensive road network. You may need to follow tracks in the dust, mud, or sand and there will not necessarily be other traffic to follow if these give out. People traveling in Mongolia should be aware of local road conditions, and weather forecasts and have researched the areas they will travel through. The knowledge of a local guide or driver can be an advantage. 
+                                    Global Positioning Systems do not always function reliably and there are large areas of the country without mobile phone coverage. It is recommended that you take backup communications like a satellite phone, plenty of water, and provisions. Make a contingency plan and make sure someone knows your route and expected times of arrival and departure.</p>
+                            </div>
+                        </div>
+                </section>
+
+                <section class = "info-space" id="faq-section">
+                    <h2>FAQ</h2>
+                        <div>
+                            <div class="row-direction2">
+                                <p>When is the best time to come to Mongolia?</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>The best time to visit Mongolia is between May to October. During this time, you will be able to travel to the most beautiful places and can participate in different traditional festivals. In May and October, the weather is dry and a bit windy. July and August, tend to be the wettest months but still depend on the climate of that year. June and September are quite similar, warm and dry.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row-direction2">
+                                <p>How can i manage visa services?</p>
+                                <i class="fa fa-plus" onclick="toggleExpand(this)"></i>
+                            </div>
+                            <div class="expandable-content-information">
+                                <p>Mongolian visas will be issued by Embassy of Mongolia in your country. Do not forget to attach your invoice and confirmation letter which was provided by Altai Expedition as an appendix to your visa application form. For more information, please visit to www.MongoliaVisa.com From this year, it is possible to apply online for a visa to travel to Mongolia for most countries.</p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+                
+        <footer class = "footer">
+            <div class = "footer-columns">
+                <div class = "footer-column">
+                    <img  class = "footer-logo" src="Images/Logo.png" alt = "footer logo">
+                    <cite class = "cite">Discover the nomad's life & Altai peaks with us.</cite>
+                </div>
+                <section class = "footer-column">
+                    <h2>Contact Us</h2>
+                    <div class = "footer-icons">
+                        <div class = "e-mail">
+                            <i class="fa fa-envelope"></i>
+                            <p>Jiger0325@gmail.com</p>
+                        </div>
+                        <div class = "phone">
+                            <i class="fa fa-mobile-phone"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+976 94 04 03 25</p>
+                        </div>
+                        <div class = "address">
+                            <i class="fa fa-location-arrow"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "footer-column">
+                    <h2>Follow Us On</h2>
+                    <div class = "follow-us">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </section>                
+            </div>
+            <hr class = "hr">
+            <p class ="copyright">&copy; Turan Tour. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+        <script src="JS.js"></script>
+    </body>
+</html>
